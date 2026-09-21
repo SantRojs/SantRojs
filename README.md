@@ -1,8 +1,8 @@
 # Professional Profile
 I'm Junior Data Analyst with expertise in data analysis and visualization. Skilled in SQL, Python, and Excel/Google Sheets, focused on transforming data into actionable insights for decision-making. Previous experience working with clients, CRM systems, metrics tracking, and business data analysis. Strong analytical thinking, problem-solving abilities, and effective communication skills.
 
-[![Static Badge](https://img.shields.io/badge/LinkedIn-blue?style=plastic&link=www.linkedin.com%2Fin%2Fsanroj&link=left)](https://img.shields.io/badge/LinkedIn-blue?style=plastic&link=www.linkedin.com%2Fin%2Fsanroj&link=left
-)
+[![LinkedIn](https://shields.io)](www.linkedin.com/in/sanroj)
+
 
 
 ## Technical & Professional Skills
