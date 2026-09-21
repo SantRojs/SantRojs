@@ -1,0 +1,82 @@
+# MercadoLibre Funnel & Retention Analysis
+
+## 📋 CONTEXT
+Analyzed 8 months of MercadoLibre user data (01/2025 - 08/2025) to identify 
+desertion patterns in the purchase funnel and customer retention. Goal: 
+understand where customers drop off and why retention declines.
+
+---
+
+## 🔍 FINDINGS
+
+### Funnel Analysis
+- **Conversion flow:** 76.90% (select_item) → 11.01% (add_to_cart) → 4.00% 
+  (begin_checkout) → 2.42% (add_shipping) → 2.09% (add_payment) → 1.25% (purchase)
+- **Critical drop-off:** -65.89 pp between select_item → add_to_cart
+- **Root cause:** Issues with product page optimization, pricing presentation, 
+  and customer trust signals
+
+### Retention Analysis by Country
+- **Uruguay:** 4.55% final conversion (best performer)
+- **Bolivia:** 3.23% final conversion
+- **Mexico:** 2.48% final conversion
+- **Paraguay, Ecuador, Colombia:** 0% final conversion
+
+**Country-specific issues identified:**
+- Paraguay: Collapses at begin_checkout (technical error)
+- Ecuador/Colombia: Stagnate at payment gateway (integration issue)
+
+### Retention Over Time
+- D7 (Day 7): 86.6% retention
+- D14 (Day 14): 55.4% retention
+- D21 (Day 21): 25.0% retention
+- D28 (Day 28): 2.6% retention
+- **Critical window:** D7-D14 shows -31 pp drop (highest loss)
+
+---
+
+## 💡 IMPLICATIONS
+
+### What This Means for Business
+1. **Immediate Priority:** Fix product page experience (select_item → add_to_cart)
+   - This single optimization could recover 65.89 pp of conversions
+   - Highest ROI improvement opportunity
+
+2. **Country-Specific Technical Fixes:**
+   - Paraguay: Debug begin_checkout processing
+   - Ecuador/Colombia: Audit payment gateway integration
+   - Expected impact: Recover 0% → 2-3% conversion in these countries
+
+3. **Retention Strategy:**
+   - Focus intervention window D7-D14 (when 31% abandon)
+   - Implement: Recompensas, personalized notifications, price drop alerts
+   - Expected impact: Move D28 from 2.6% → 5-8% retention
+
+4. **Recommended Tests:**
+   - A/B test product page redesign (price display, trust badges)
+   - Test email/SMS campaigns D7-D14
+   - Validate improvements via ongoing monitoring
+
+### Expected Business Impact
+- +65.89 pp improvement in add_to_cart rate = ~5x conversion increase
+- Fix country issues = +$X revenue recovery
+- D28 retention improvement 2.6% → 5% = +92% lifetime value
+
+---
+
+## 🛠️ Technical Details
+- **Tools:** SQL (data extraction), Google Sheets (analysis), Funnel/Cohort Analysis
+- **Data source:** MercadoLibre user transaction logs
+- **Analysis period:** 01/2025 - 08/2025
+- **Sample size:** [X users, X transactions]
+
+---
+
+## 📁 Files
+- `queries.sql` - SQL analysis queries
+- `analysis_data.csv` - Sample dataset
+
+---
+
+## 🔗 Full Visualizations & Detailed Findings
+[View on Notion](https://your-notion-link)
